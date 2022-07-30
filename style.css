@@ -33,3 +33,10 @@ label, input {
 }
 
 
+
+#relaxingimg {
+    justify-self: center;
+    align-self: center;
+    height: clamp(100px, 25vw, 30vw);
+    width: clamp(100px, 25vw, 30vw);
+}
