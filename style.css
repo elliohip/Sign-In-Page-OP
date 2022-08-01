@@ -1,8 +1,7 @@
 #background {
     position: absolute;
-    background: linear-gradient(blue, white);
-    width: 100vw;
-    height: 100vw;
+    height: 100%;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-content: center;
@@ -11,25 +10,70 @@
 
 
 
+
+
 fieldset {
     display: flex;
     justify-self: center;
     justify-content: center;
     margin-top: 0px;
-    align-self: center;
-    border-color: green;
+    align-self: flex-start;
+
+    border: none;
+
+    padding: 10px;
 
 
 
-    background-color: rgb(174, 242, 174);
+    
+    width: clamp(400px, 100vw, 100%);
+    height: clamp(300px, 50vh, 60%);
 
 
-    border-radius: 15%;
+    
 
+
+
+
+
+
+    
+
+}
+
+form{
+
+    /*
+    set up the image
+    */
+    background-image: url(cherrytree.png);
+
+
+    /*
+    stop the image from repeating and cover the div space
+    */
+    background-repeat:no-repeat;
+    background-size:cover;
+    
+
+    border-bottom-right-radius: 40%;
+
+    opacity: 1;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+
+}
+
+form div{
+    width: clamp(150px,35%, 40%)
+    
 }
 
 label, input {
     font-size: 1.5rem;
+    color: rgb(255, 255, 255);
 }
 
 
@@ -37,6 +81,15 @@ label, input {
 #relaxingimg {
     justify-self: center;
     align-self: center;
-    height: clamp(100px, 25vw, 30vw);
-    width: clamp(100px, 25vw, 30vw);
+    
+    height: auto;
+    width: clamp(200px, 25vw, 30vw);
+
+    min-width: 200px;
+}
+
+#sign-up-title{
+    position: absolute;
+
+    
 }
